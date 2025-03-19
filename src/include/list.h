@@ -16,8 +16,8 @@ typedef struct llist {
     struct llist *next;
 } llist_t;
 
-void free_list(llist_t *list);
-void cat_list(llist_t **dest, llist_t *node, int where);
+char *free_list(llist_t *list);
+void cat_list(llist_t **dest, char *node, int where);
 llist_t *create_node(void *entity);
 
 #endif /* LIST_H_ */
